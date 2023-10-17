@@ -22,7 +22,6 @@ export function useUser() {
                 const docSnap = await getDoc(docRef);
 
                 const userName: any = docSnap.data()
-                console.log(userName);
                 userData.displayName = userName.name;
                 setUser(userData);
             } else {

@@ -37,7 +37,6 @@ export default function UrlMenu({ urlData, getDataFunction }: { urlData: any, ge
             console.error('Failed to copy text: ', err);
         }
     }
-    console.log(urlData);
 
     return (
         <>
