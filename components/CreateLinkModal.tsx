@@ -32,9 +32,18 @@ export default function CreateLinkModal({ user, getDataFunction }: { user: any, 
             setIsLoading(false)
             return false
         } else {
+            let long_url: string = formData.get("long_url") as string;
+
+            if (long_url.startsWith("http://")) {
+                long_url = long_url.replace('http://', '');
+            }
+            if (long_url.startsWith("https://")) {
+                long_url = long_url.replace('https://', '');
+            }
+
             await setDoc(doc(Firestore, "url", backHalf), {
                 user_email: user.email,
-                long_url: formData.get("long_url") as string,
+                long_url: long_url,
                 total_clicks: 0,
                 back_half: backHalf
             })
