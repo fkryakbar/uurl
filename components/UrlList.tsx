@@ -39,8 +39,51 @@ export default function UrlList({ getDataFunction, urlData, isLoadingData, setIs
 
             {
                 isLoadingData ? (<>
-                    <div className="text-center">
-                        Loading...
+                    <div className="grid lg:grid-cols-4 grid-cols-1 gap-3 mt-3">
+                        <div className="border-[1px] border-slate-200 rounded-lg p-4 truncate">
+                            <div className="flex flex-nowrap gap-2 items-center hover:text-red-500 transition-all">
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-full h-4 animate-pulse"></div>
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-4 h-4 animate-pulse"></div>
+                            </div>
+                            <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-[50%] h-4 animate-pulse mt-2"></div>
+                            <div className="flex gap-3 mt-5">
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-10 h-10 animate-pulse"></div>
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-10 h-10 animate-pulse"></div>
+                            </div>
+                        </div>
+                        <div className="border-[1px] border-slate-200 rounded-lg p-4 truncate">
+                            <div className="flex flex-nowrap gap-2 items-center hover:text-red-500 transition-all">
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-full h-4 animate-pulse"></div>
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-4 h-4 animate-pulse"></div>
+                            </div>
+                            <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-[50%] h-4 animate-pulse mt-2"></div>
+                            <div className="flex gap-3 mt-5">
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-10 h-10 animate-pulse"></div>
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-10 h-10 animate-pulse"></div>
+                            </div>
+                        </div>
+                        <div className="border-[1px] border-slate-200 rounded-lg p-4 truncate">
+                            <div className="flex flex-nowrap gap-2 items-center hover:text-red-500 transition-all">
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-full h-4 animate-pulse"></div>
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-4 h-4 animate-pulse"></div>
+                            </div>
+                            <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-[50%] h-4 animate-pulse mt-2"></div>
+                            <div className="flex gap-3 mt-5">
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-10 h-10 animate-pulse"></div>
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-10 h-10 animate-pulse"></div>
+                            </div>
+                        </div>
+                        <div className="border-[1px] border-slate-200 rounded-lg p-4 truncate">
+                            <div className="flex flex-nowrap gap-2 items-center hover:text-red-500 transition-all">
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-full h-4 animate-pulse"></div>
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-4 h-4 animate-pulse"></div>
+                            </div>
+                            <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-[50%] h-4 animate-pulse mt-2"></div>
+                            <div className="flex gap-3 mt-5">
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-10 h-10 animate-pulse"></div>
+                                <div className="font-bold bg-slate-200 rounded-lg hover:text-red-500 transition-all w-10 h-10 animate-pulse"></div>
+                            </div>
+                        </div>
                     </div>
                 </>) : null
             }
